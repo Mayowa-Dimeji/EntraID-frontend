@@ -1,0 +1,2 @@
+/Users/may/projects/BlazorLOginGoogle/wwwroot/package-lock.json
+/Users/may/projects/BlazorLOginGoogle/wwwroot/web.config
