@@ -28,7 +28,7 @@ jobs:
           action: "upload"
           app_location: "./EntraFrontend"
           api_location: "Api"
-          output_location: "wwwroot"
+          output_location: "publish/wwwroot"
           app_build_command: "dotnet publish -c Release -o wwwroot"
 
   close_pull_request_job:
