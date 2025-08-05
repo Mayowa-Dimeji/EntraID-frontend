@@ -28,19 +28,19 @@
 
 @code {
     private  string ClientId => Configuration["AzureAd:ClientId"]!;
-    private  string TenantId => Configuration["AzureAd:TenantId"]!;
-    private  string RedirectUri => Nav.BaseUri + "authentication/login";
-    private  string PostLoginRedirect = "/dashboard";
+
+    private string RedirectUri => "/authentication/login";
+
+
+    private string Authority => Configuration["AzureAd:Authority"]!;
+    
 
   
-    private void RedirectAfterLogin()
-    {
-        Nav.NavigateTo(PostLoginRedirect, forceLoad: true);
-    }
+ 
 
     private void LoginWithMicrosoft()
     {
-        var url = $"https://login.microsoftonline.com/{TenantId}/oauth2/v2.0/authorize" +
+        var url = $"{Authority}/oauth2/v2.0/authorize" +
                   $"?client_id={ClientId}" +
                   $"&response_type=token" +
                   $"&scope=openid%20profile%20email" +
@@ -54,7 +54,7 @@
 
     private void LoginWithGoogle()
     {
-        var url = $"https://login.microsoftonline.com/{TenantId}/oauth2/v2.0/authorize" +
+        var url = $"{Authority}/oauth2/v2.0/authorize" +
                   $"?client_id={ClientId}" +
                   $"&response_type=token" +
                   $"&scope=openid%20profile%20email" +
@@ -68,7 +68,7 @@
 
     private void LoginWithEmailOTP()
     {
-        var url = $"https://login.microsoftonline.com/{TenantId}/oauth2/v2.0/authorize" +
+        var url = $"{Authority}/oauth2/v2.0/authorize" +
                   $"?client_id={ClientId}" +
                   $"&response_type=token" +
                   $"&scope=openid%20profile%20email" +
