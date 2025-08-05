@@ -1,0 +1,2 @@
+/Users/may/projects/BlazorLOginGoogle/EntraFrontend/bin/Release/net9.0/publish/package-lock.json
+/Users/may/projects/BlazorLOginGoogle/EntraFrontend/bin/Release/net9.0/publish/web.config

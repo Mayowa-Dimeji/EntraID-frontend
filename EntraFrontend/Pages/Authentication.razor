@@ -1,12 +1,9 @@
 ﻿@page "/authentication/{action}"
 @using Microsoft.AspNetCore.Components.WebAssembly.Authentication
 @inject NavigationManager Navigation
-<RemoteAuthenticatorView Action="@Action" OnLogInSucceeded="HandleLoginSuccess"  />
+<RemoteAuthenticatorView Action="@Action"  />
 
 @code{
     [Parameter] public string? Action { get; set; }
-     private void HandleLoginSuccess()
-    {
-        Navigation.NavigateTo("/dashboard");
-    }
+
 }

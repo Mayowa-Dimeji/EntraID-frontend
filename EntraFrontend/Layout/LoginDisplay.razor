@@ -1,19 +1,53 @@
-﻿@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
-@inject NavigationManager Navigation
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@inject NavigationManager Nav
+@inject IConfiguration Configuration
+@inject IAccessTokenProvider TokenProvider
 
 <AuthorizeView>
     <Authorized>
-        Hello, @context.User.Identity?.Name!
-        <button class="nav-link btn btn-link" @onclick="BeginLogOut">Log out</button>
+        <div class="flex flex-col items-center justify-center min-h-screen bg-white text-center px-4">
+            <div class="bg-white max-w-xl w-full p-6 rounded shadow">
+                <h1 class="text-xl font-semibold mb-3">Hello, @context.User.Identity?.Name!</h1>
+
+                <p class="mb-3 text-gray-700">
+                    This is a minimal login dashboard built as a learning project to practice and demonstrate integration with:
+                </p>
+                <ul class="list-disc pl-5 mb-4 text-gray-700 text-sm text-left">
+                    <li>Microsoft Entra ID and Entra External ID</li>
+                    <li>Social login via Google and Microsoft</li>
+                    <li>Authorization using <code>AuthorizeView</code></li>
+                    <li>Token-based authentication in a Blazor WebAssembly app</li>
+                </ul>
+
+                <p class="text-gray-700 text-sm mb-6">
+                    It uses simple visuals and hardwired UI logic to focus on the core identity flows and the secure login experience.
+                </p>
+
+                <button class="px-4 py-2 bg-red-600 text-white rounded w-full" @onclick="LogOut">
+                    Log out
+                </button>
+            </div>
+        </div>
     </Authorized>
+
     <NotAuthorized>
-        <a href="authentication/login">Log in</a>
+        <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4">
+            <div class="bg-white p-8 rounded shadow-md w-full max-w-sm">
+                <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">Sign in to Entra Login</h2>
+
+                <a href="authentication/login" class="flex items-center justify-center w-full py-2 px-4 border border-gray-300 rounded hover:bg-gray-50">
+                    <img src="https://img.icons8.com/?size=100&id=22989&format=png&color=000000" alt="Microsoft" class="w-5 h-5 mr-3" />
+                    <span>Continue to Sign in</span>
+                </a>
+            </div>
+        </div>
     </NotAuthorized>
 </AuthorizeView>
 
-@code{
-    public void BeginLogOut()
+@code {
+    private void LogOut()
     {
-        Navigation.NavigateToLogout("authentication/logout");
+        Nav.NavigateToLogout("authentication/logout?postLogoutRedirectUri=/");
     }
 }
