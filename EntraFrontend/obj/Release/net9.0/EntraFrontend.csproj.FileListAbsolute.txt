@@ -829,7 +829,6 @@
 /Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/compressed/f32kn295nz-gcvjxldlff.gz
 /Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/compressed/15pbu7u8t4-igqowc5fw6.gz
 /Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/compressed/3kidlvs57m-6h6v874upz.gz
-/Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/compressed/vhsagp6alt-ywoy5oqiss.gz
 /Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/compressed/hk2k61llfe-i2bip54vrv.gz
 /Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/compressed/5hof3l7ozn-bqjiyaj88i.gz
 /Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/compressed/8cux0bho2o-c2jlpeoesf.gz
@@ -1090,10 +1089,12 @@
 /Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/refint/EntraFrontend.dll
 /Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/EntraFrontend.pdb
 /Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/ref/EntraFrontend.dll
-/Users/may/projects/BlazorLOginGoogle/EntraFrontend/bin/Release/net9.0/wwwroot/_framework/EntraFrontend.3f8jy7x2d8.wasm
-/Users/may/projects/BlazorLOginGoogle/EntraFrontend/bin/Release/net9.0/wwwroot/_framework/EntraFrontend.v0b2zet15y.pdb
-/Users/may/projects/BlazorLOginGoogle/EntraFrontend/bin/Release/net9.0/wwwroot/_framework/EntraFrontend.3f8jy7x2d8.wasm.gz
-/Users/may/projects/BlazorLOginGoogle/EntraFrontend/bin/Release/net9.0/wwwroot/_framework/EntraFrontend.v0b2zet15y.pdb.gz
-/Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/compressed/ojklk00is0-3f8jy7x2d8.gz
-/Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/compressed/xon54y1psz-v0b2zet15y.gz
-/Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/compressed/k6zl3o23wq-lf50msfwas.gz
+/Users/may/projects/BlazorLOginGoogle/EntraFrontend/bin/Release/net9.0/wwwroot/_framework/EntraFrontend.5uyzd6gfle.wasm
+/Users/may/projects/BlazorLOginGoogle/EntraFrontend/bin/Release/net9.0/wwwroot/_framework/EntraFrontend.as46oh11au.pdb
+/Users/may/projects/BlazorLOginGoogle/EntraFrontend/bin/Release/net9.0/wwwroot/_framework/EntraFrontend.5uyzd6gfle.wasm.gz
+/Users/may/projects/BlazorLOginGoogle/EntraFrontend/bin/Release/net9.0/wwwroot/_framework/EntraFrontend.as46oh11au.pdb.gz
+/Users/may/projects/BlazorLOginGoogle/EntraFrontend/bin/Release/net9.0/staticwebapp.config.json
+/Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/compressed/vhsagp6alt-jhyt60qinj.gz
+/Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/compressed/ojklk00is0-5uyzd6gfle.gz
+/Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/compressed/xon54y1psz-as46oh11au.gz
+/Users/may/projects/BlazorLOginGoogle/EntraFrontend/obj/Release/net9.0/compressed/k6zl3o23wq-4azim6akjg.gz
